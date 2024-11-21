@@ -18,7 +18,7 @@ const CourseBuilderForm = () => {
   const dispacth = useDispatch();
   const [editSectionName , setEditSectionName] = useState(null)
 
-  const {register , getValues ,formState : {errors} , setValue , handleSubmit , } = useForm();
+  const {register  ,formState : {errors} , setValue , handleSubmit , } = useForm();
   
   // submit the form 
   const onSubmit  = async (data) => {

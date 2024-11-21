@@ -8,7 +8,7 @@ import { setCourse, setEditCourse } from '../../../../slices/courseSlice'
 const EditCourse = () => {
     const{token} = useSelector( (state) => state.auth)
     const{course} = useSelector( (state) => state.course)
-    const[loading , setLoading] = useState(false);
+    // const[loading , setLoading] = useState(false);
     const dispatch = useDispatch();
     const {courseId} = useParams();
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ const EditCourse = () => {
     useEffect( () => {
     
         if(courseId){
-            setLoading(true)
+            // setLoading(true)
             const getCourseDetails  = async () => {
                 const response = await getFullDetailsOfCourse(courseId , token)
                 // console.log("response -->", response.courseName);
@@ -26,7 +26,7 @@ const EditCourse = () => {
                     dispatch(setEditCourse(true));
                 }
             }
-            setLoading(false);
+            // setLoading(false);
             getCourseDetails();
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -5,11 +5,11 @@ import { apiConnector } from '../services/apiconnector'
 import { categories } from '../services/apis'
 import { getCatalogPageData } from '../services/operations/PageAndComponentData'
 import CourseSlider from '../components/core/Catalog/CourseSlider'
-import Course_Card from '../components/core/Catalog/Course_Card'
+import CourseCard from '../components/core/Catalog/CourseCard'
 import Footer from '../components/common/Footer'
 
 const Catalog = () => {
-    const {loading } = useSelector( (state) => state.profile)
+    // const {loading } = useSelector( (state) => state.profile)
     const {catalogName} = useParams();
     //convert the name into the object id
     const [ active , setActive ] = useState(1);
@@ -109,7 +109,7 @@ const Catalog = () => {
             {/* Show course card */}
             <div className='py-8'>
                 <div className='grid grid-cols-1 gap-6 lg:grid-cols-2 '>
-                    {catalogPageData?.data?.mostSellingCourses?.slice(0,4).map( (course ,i) => ( <Course_Card course={course} key={i} Height={"h-[350px]"}/>))
+                    {catalogPageData?.data?.mostSellingCourses?.slice(0,4).map( (course ,i) => ( <CourseCard course={course} key={i} Height={"h-[350px]"}/>))
                     }
                 </div>
             </div>

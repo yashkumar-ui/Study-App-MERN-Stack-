@@ -7,7 +7,6 @@ import { logout } from "./authAPI";
 const {
     UPDATE_DISPLAY_PICTURE_API,
     UPDATE_PROFILE_API,
-    CHANGE_PASSWORD_API,
     DELETE_PROFILE_API,
 } = settingsEndpoinst
 

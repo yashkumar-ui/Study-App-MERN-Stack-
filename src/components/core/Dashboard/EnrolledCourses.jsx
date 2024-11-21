@@ -9,7 +9,7 @@ const EnrolledCourses = () => {
     // fetch the courses in which the student is enrolled 
     const {token} = useSelector( (state) => state.auth);
     const navigate = useNavigate();
-    const TRUNCATE_LENGTH = 10
+    // const TRUNCATE_LENGTH = 10
 
     // create a array that store the enrolled courses of the students 
     const [enrolledCourses , setEnrolledCourses] = useState();
@@ -34,6 +34,7 @@ const EnrolledCourses = () => {
         }
 
         fetchCourseData();
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 

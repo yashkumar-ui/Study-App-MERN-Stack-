@@ -23,7 +23,7 @@ const ContactForm = () => {
         try {
           setLoading(true)
           // calls the backend and send the mail
-          const response = await apiConnector("POST" , contactUsEndpoints.CONTACTUS_API , data );
+          await apiConnector("POST" , contactUsEndpoints.CONTACTUS_API , data );
           
           setLoading(false)
           toast.success("form submit successfully")

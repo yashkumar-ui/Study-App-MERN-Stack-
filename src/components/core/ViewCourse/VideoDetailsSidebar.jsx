@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import {IoIosArrowBack} from "react-icons/io"
-import {BsChevronDown} from "react-icons/bs"
 import {HiChevronDoubleDown} from "react-icons/hi"
 
 const VideoDetailsSidebar = ({setReviewModal}) => {
@@ -38,6 +37,7 @@ const VideoDetailsSidebar = ({setReviewModal}) => {
             setActiveStatus(courseSectionData?.[currentSectionIndex]?._id)
             setVideoBarActive(activeSubSectionId)
         }) ()
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [courseSectionData , courseEntireData , location.pathname])
 
   return (

@@ -26,6 +26,7 @@ const PublishCourse = () => {
         if(course.status === COURSE_STATUS.PUBLISHED){
             setValue("public", true)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     const goBack = () => {

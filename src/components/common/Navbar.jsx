@@ -39,6 +39,7 @@ const Navbar = () => {
 
     useEffect( () => {
         fetchSubLinks();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     } , [])
 
 
@@ -102,7 +103,7 @@ const Navbar = () => {
                if token !null , agr student hai ---> cart show krna , profile shows as usual
                if instructor , cart show nhi krna , profile shows as usual   */}
                 {
-                     user && user?.accountType != "Instructor" && (
+                     user && user?.accountType !== "Instructor" && (
                         <Link to="/dashboard/cart" className='relative'>
                              <AiOutlineShoppingCart className="text-2xl text-richblack-100" />
                              {

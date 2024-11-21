@@ -11,12 +11,12 @@ import { logout } from '../services/operations/authAPI';
 import CourseAccordionBar from '../components/core/Courses /CourseAccordionBar';
 import Footer from '../components/common/Footer';
 import CourseDetailsCard from '../components/core/Courses /CourseDetailsCard';
-import Error from './Error';
+// import Error from './Error';
 
 const CourseDetails = () => {
     const {courseId} = useParams();
     const {token} = useSelector( (state) => state.auth);
-    const {payementLoading} = useSelector( (state) => state.course);
+    // const {payementLoading} = useSelector( (state) => state.course);
     const {user} = useSelector( (state) => state.profile);
     // const {loading} = useSelector ( (state) => state.profile);
     const dispatch = useDispatch();

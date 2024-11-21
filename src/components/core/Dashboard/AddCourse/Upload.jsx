@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 
 const Upload = ({name , label , register , errors , setValue , videwData = null , video = false , editData = null , }) => {
    
-  const {course} = useSelector( (state) => state.course)
+  // const {course} = useSelector( (state) => state.course)
   const [selectedFile , setSelectedFile] = useState(null);
   const inputRef = useRef(null);
   const [previewSource , setPreviewSource] = useState(

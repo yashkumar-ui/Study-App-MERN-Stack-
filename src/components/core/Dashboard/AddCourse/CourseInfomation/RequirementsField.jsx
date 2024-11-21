@@ -12,10 +12,12 @@ const RequirementsField = ({name , label , placeholder , errors, register , setV
             setRequirementList(course?.instructions)
         }
         register(name , {required : true , validate: (value) => value.length > 0 })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect( () => {
         setValue( name , requirementList)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     } , [requirementList] )
 
     // add the data to the list and display it on the ui
