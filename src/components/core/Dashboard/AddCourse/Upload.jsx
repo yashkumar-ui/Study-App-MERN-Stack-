@@ -4,7 +4,7 @@ import { FiUploadCloud } from "react-icons/fi"
 import "video-react/dist/video-react.css"
 
 import { useDropzone } from 'react-dropzone'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 const Upload = ({name , label , register , errors , setValue , videwData = null , video = false , editData = null , }) => {
    

@@ -14,9 +14,11 @@ const VideoDetails = () => {
    const playerRef = useRef(null);
    const {token} = useSelector( (state) => state.auth);
    const {courseEntireData , courseSectionData , completedLectures } = useSelector( (state) => state.viewCourse);
+   // eslint-disable-next-line
    const [ videoLoading , setVideoLoading] = useState(true);
 
    const [videoData  , setVideoData] = useState(false);
+   // eslint-disable-next-line
    const [previewSource , setPreviewSource ] = useState("");
    const [videoEnd , setVideoEnd] = useState(false);
    const [loading , setLoading] = useState(false);
