@@ -67,7 +67,7 @@ const resetPasswordTemplate = (url) => {
 	
 	<body>
 		<div class="container">
-			<a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
+			<a href="https://yash-studyapp.netlify.app/"><img class="logo"
 					src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
 			<div class="message">Reset Password Link </div>
 			<div class="body">

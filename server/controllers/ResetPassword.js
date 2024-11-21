@@ -31,7 +31,8 @@ exports.resetPasswordLink  = async (req,res) => {
             {new : true},
         )
         // create url 
-        const url = `http://localhost:3000/update-password/${token}`;
+        const url = `https://yash-studyapp.netlify.app/update-password/${token}` || `http://localhost:3000/update-password/${token}`;
+        // const url = `http://localhost:3000/update-password/${token}`;
         // send mail containig the url 
         await mailSender(email , "Password reset link from StudyNotion" ,
                resetPasswordTemplate(url), 
